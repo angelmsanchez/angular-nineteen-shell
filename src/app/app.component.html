@@ -181,5 +181,12 @@
     </ul>
   </nav>
 </main>
+<body>
+  body shell microfrontend
+  <p>Books: {{ store.books() | json }}</p>
+  <p>Loading: {{ store.isLoading() }}</p>
+  <button (click)="addBook()">Add Book</button>
+  <button (click)="removeBooks()">Remove Book</button>
+</body>
 
 <router-outlet />
