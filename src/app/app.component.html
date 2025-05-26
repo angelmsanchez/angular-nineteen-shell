@@ -173,18 +173,12 @@
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="/micro1">Micro</a></li>
   </ul>
-  <nav>
-    <ul>
-      <li><a routerLink="/" routerLinkActive="active">Hydration</a></li>
-      <li><a routerLink="/example" routerLinkActive="active">Example</a></li>
-      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-    </ul>
-  </nav>
 </main>
 <body>
-  body shell microfrontend
+  Body shell microfrontend
   <p>Books: {{ store.books() | json }}</p>
   <p>Loading: {{ store.isLoading() }}</p>
+  <p>UserName: {{ authService.getUserName() }}</p>
   <button (click)="addBook()">Add Book</button>
   <button (click)="removeBooks()">Remove Book</button>
 </body>

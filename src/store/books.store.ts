@@ -18,7 +18,7 @@ const initialState: BooksState = {
 
 const methods = (store: any) => ({
   removeAll(): void {
-    patchState(store, (state) => ({ books: [] }));
+    patchState(store, () => ({ books: [] }));
   },
 });
 
